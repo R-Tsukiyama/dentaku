@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+ 
+  <body>
+    <div class="container">
+    <div id="result">0</div>
+<!--ボタン入力-->
+    <div id="input">
+<!--1行目(7,8,9,+)-->
+      <section class="line">
+        <button id="num_btn" onclick="num_click(this)">7</button>
+        <button id="num_btn" onclick="num_click(this)">8</button>
+        <button id="num_btn" onclick="num_click(this)">9</button>
+        <button id="ope_btn" onclick="ope_click(this)">+</button>
+      </section>
+<!--2行目(4,5,6,-)-->
+      <section class="line">
+        <button id="num_btn" onclick="num_click(this)">4</button>
+        <button id="num_btn" onclick="num_click(this)">5</button>
+        <button id="num_btn" onclick="num_click(this)">6</button>
+        <button id="ope_btn" onclick="ope_click(this)">-</button>
+      </section>
+<!--3行目(1,2,3,*)-->
+      <section class="line">
+        <button id="num_btn" onclick="num_click(this)">1</button>
+        <button id="num_btn" onclick="num_click(this)">2</button>
+        <button id="num_btn" onclick="num_click(this)">3</button>
+        <button id="ope_btn" onclick="ope_click(this)">*</button>
+      </section>
+<!--4行目(0,00,.,/)-->
+      <section class="line">
+        <button id="num_btn" onclick="num_click(this)">0</button>
+        <button id="num_btn" onclick="w_zero(this)">00</button>
+        <button id="point_btn" onclick="point_click(this)">.</button>
+        <button id="ope_btn" onclick="ope_click(this)">/</button>
+      </section>
+<!--5行目(AC,=)-->
+      <section class="line">
+        <button id="clear" onclick="reset(this)">AC</button>
+        <button id="equal_btn" onclick="equal(this)">=</button>
+      </section>
+     </div> 
+    </div>
+  <script src="main.js"></script>
+ </body>
+</html>
